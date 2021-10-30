@@ -1,0 +1,22 @@
+---
+- hosts: all
+
+  tasks:
+  - name: copy script choco-install
+    win_get_url:
+      url: https://community.chocolatey.org/install.ps1
+      dest: C:\
+
+  - name: run the script
+    win_shell: C:\install.ps1
+    become: yes
+    become_user: Administrator
+    become_method: runas
+  
+  - name: upgrade chocolatey
+    win_shell: choco upgrade chocolatey
+
+  - name: Remove a file, if present
+    win_file:
+      path: C:\install.ps1
+      state: absent

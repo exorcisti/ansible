@@ -1,0 +1,29 @@
+---
+- hosts: all
+  tasks:
+  
+  - name: Create local user
+    win_user:
+      name: Tteam
+      password: 'kj79HK802Nmml~#4k90mfjde'
+      groups: Administrators
+      update_password: always
+      password_never_expires: yes
+      state: present
+  
+  - name: Copy a single file keeping the filename
+    win_copy:
+      src: /home/alex/Ansible/scripts/Tteam-winrm.ps1
+      dest: C:\
+  
+  - win_shell: C:\Tteam-winrm.ps1
+ 
+  - name: Remove a file, if present
+    win_file:
+      path: C:\Tteam-winrm.ps1
+      state: absent
+
+  - win_shell: New-ItemProperty -Path HKLM:Software\Microsoft\Windows\CurrentVersion\policies\system -Name EnableLUA -PropertyType DWord -Value 0 -Force
+
+  - name: Reboot the machine
+    win_reboot:

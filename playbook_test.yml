@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+  - name: Copy a single file keeping the filename
+    win_copy:
+      src: /home/alex/Ansible/test123
+      dest: C:\temp
+  - win_shell: ipconfig

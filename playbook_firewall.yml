@@ -1,0 +1,100 @@
+---
+- hosts: all
+
+  tasks:
+
+  - name: Firewall rule winrm TCP port 5985 /1
+    win_firewall_rule:
+      name: Windows Remote Management (HTTP-In)-1
+      localport: 5985
+      action: allow
+      direction: in
+      protocol: tcp
+      profiles: public
+      remoteip: 46.229.208.26
+      state: present
+      enabled: yes
+
+  - name: Firewall rule winrm TCP port 5985 /2  
+    win_firewall_rule:
+      name: Windows Remote Management (HTTP-In)-2
+      localport: 5985
+      action: allow
+      direction: in
+      protocol: tcp
+      profiles: public
+      remoteip: 176.32.188.2
+      state: present
+      enabled: yes
+
+  - name: Firewall rule winrm TCP port 5985 /3
+    win_firewall_rule:
+      name: Windows Remote Management (HTTP-In)-3
+      localport: 5985
+      action: allow
+      direction: in
+      protocol: tcp
+      profiles: public
+      remoteip: 5.79.86.92
+      state: present
+      enabled: yes      
+
+  - name: Firewall rule winrm TCP port 5985 /4
+    win_firewall_rule:
+      name: Windows Remote Management (HTTP-In)-4
+      localport: 5985
+      action: allow
+      direction: in
+      protocol: tcp
+      profiles: public
+      remoteip: 81.17.60.94
+      state: present
+      enabled: yes  
+
+  - name: Firewall rule winrm TCP port 5985
+    win_firewall_rule:
+      name: Windows Remote Management (HTTP-In)
+      localport: 5985
+      action: allow
+      direction: in
+      protocol: tcp
+      profiles: public
+      remoteip: any
+      state: absent
+      enabled: yes
+
+  - name: Firewall rule winrm TCP port 5985
+    win_firewall_rule:
+      name: Windows Remote Management (HTTP-In)
+      localport: 5985
+      action: allow
+      direction: in
+      protocol: tcp
+      profiles: private, domain
+      remoteip: any
+      state: present
+      enabled: yes
+
+  - name: Zabbix port tcp
+    win_firewall_rule:
+      name: Zabbix TCP
+      localport: 10050
+      action: allow
+      direction: in
+      protocol: tcp
+      profiles: public
+      remoteip: 81.17.60.94
+      state: present
+      enabled: yes
+
+  - name: Zabbix port udp
+    win_firewall_rule:
+      name: Zabbix UDP
+      localport: 10050
+      action: allow
+      direction: in
+      protocol: udp
+      profiles: public
+      remoteip: 81.17.60.94
+      state: present
+      enabled: yes  

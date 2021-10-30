@@ -1,0 +1,23 @@
+---
+- hosts: all
+
+  tasks:
+  - name: Install zabbix-agent useing choco
+    win_shell: choco install zabbix-agent
+    register: result
+  - debug:
+      var: result.stdout_lines
+
+  - name: Copy prepared zabbix_agentd.conf
+    win_copy:
+      src: /home/alex/Ansible/scripts/zabbix_agentd.conf
+      dest: C:\ProgramData\zabbix
+
+  - name: Copy prepared zabbix_agentd.psk
+    win_copy:
+      src: /home/alex/Ansible/scripts/zabbix_agentd.psk
+      dest: C:\ProgramData\zabbix
+
+
+
+ # в конце нужно рестартануть агента     

@@ -1,0 +1,33 @@
+---
+- hosts: all
+  tasks:
+  - name: Install packages
+    yum:
+      name: 
+        - zsh
+        - curl
+        - wget
+        - git
+      state: present
+
+  - name: Make zsh default
+    shell: sudo sh -c "echo $(which zsh) >> /etc/shells" && chsh -s $(which zsh) root
+  
+  - name: Install oh-my-zsh
+    shell: sh -cf "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    ignore_errors : yes
+    
+  - name: Change the working directory to somedir/ before executing the command
+    shell: "{{ item }}"
+    loop:
+      - git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+      - git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    ignore_errors : yes
+
+  - name: Change the working directory to somedir/ before executing the command
+    ansible.builtin.shell: curl https://getmic.ro | bash
+    args:
+      chdir: /usr/bin/
+
+
+
