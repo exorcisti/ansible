@@ -1,0 +1,6 @@
+---
+- hosts: all
+
+  tasks:
+  - name: File hidden attribute
+    win_shell: (get-item C:\zabbix_agentd.log).Attributes += 'Hidden'
