@@ -4,9 +4,15 @@
   tasks:
   - name: Install zabbix-agent useing choco
     win_shell: choco install zabbix-agent
-    register: result
-  - debug:
-      var: result.stdout_lines
+    ignore_errors : yes
+    #register: result
+  #- debug:
+      #var: result.stdout_lines
+  tasks:
+  - name: Install zabbix-agent useing choco
+    win_chocolatey:
+      name: zabbix-agent
+      state: reinstalled
 
   - name: Copy prepared zabbix_agentd.conf
     win_copy:
@@ -18,6 +24,8 @@
       src: /home/alex/Ansible/scripts/zabbix_agentd.psk
       dest: C:\ProgramData\zabbix
 
-
-
- # в конце нужно рестартануть агента     
+  - name: Restart a Zabbix Agent service
+    win_service:
+      name: Zabbix Agent
+      state: restarted
+    

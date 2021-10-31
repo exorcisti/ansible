@@ -12,11 +12,16 @@
     become: yes
     become_user: Administrator
     become_method: runas
-  
+    ignore_errors : yes
+
   - name: upgrade chocolatey
-    win_shell: choco upgrade chocolatey
+    win_chocolatey:
+      name: chocolatey
+      state: latest
+    ignore_errors : yes
 
   - name: Remove a file, if present
     win_file:
       path: C:\install.ps1
       state: absent
+  ignore_errors : yes
