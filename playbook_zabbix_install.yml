@@ -8,7 +8,7 @@
     #register: result
   #- debug:
       #var: result.stdout_lines
-  tasks:
+
   - name: Install zabbix-agent useing choco
     win_chocolatey:
       name: zabbix-agent
