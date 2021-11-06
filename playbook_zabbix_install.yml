@@ -2,9 +2,9 @@
 - hosts: all
 
   tasks:
-  - name: Install zabbix-agent useing choco
-    win_shell: choco install zabbix-agent
-    ignore_errors : yes
+  #- name: Install zabbix-agent useing choco
+    #win_shell: choco install zabbix-agent
+    #ignore_errors : yes
     #register: result
   #- debug:
       #var: result.stdout_lines
@@ -12,7 +12,7 @@
   - name: Install zabbix-agent useing choco
     win_chocolatey:
       name: zabbix-agent
-      state: reinstalled
+      state: latest
 
   - name: Copy prepared zabbix_agentd.conf
     win_copy:

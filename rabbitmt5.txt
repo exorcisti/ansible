@@ -1,0 +1,328 @@
+TP-EXC-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Stopped  mt5bsrv            Backup Server                         
+
+
+
+TP-MEF-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-UGB-01-LON | FAILED | rc=1 >>
+Get-Service : Cannot find any service with service name 'mt5bsrv'.
+At line:1 char:65
++ ... utEncoding = New-Object Text.UTF8Encoding $false; Get-Service mt5bsrv
++                                                       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mt5bsrv:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommandnon-zero return code
+TP-HON-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-EXC-02-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Stopped  mt5bsrv            Backup Server                         
+
+
+
+TP-BM-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            T4B.MT5BackupForExport                
+
+
+
+TP-FX1-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-FPC-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-FFX-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-PLI-01-SG | FAILED | rc=1 >>
+Get-Service : Cannot find any service with service name 'mt5bsrv'.
+At line:1 char:65
++ ... utEncoding = New-Object Text.UTF8Encoding $false; Get-Service mt5bsrv
++                                                       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mt5bsrv:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommandnon-zero return code
+TP-RIM-01-SG | FAILED | rc=1 >>
+Get-Service : Cannot find any service with service name 'mt5bsrv'.
+At line:1 char:65
++ ... utEncoding = New-Object Text.UTF8Encoding $false; Get-Service mt5bsrv
++                                                       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mt5bsrv:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommandnon-zero return code
+TP-RMC-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-BTL-02-LON | FAILED | rc=1 >>
+Get-Service : Cannot find any service with service name 'mt5bsrv'.
+At line:1 char:65
++ ... utEncoding = New-Object Text.UTF8Encoding $false; Get-Service mt5bsrv
++                                                       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mt5bsrv:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommandnon-zero return code
+TP-GRN-01-LON | FAILED | rc=1 >>
+Get-Service : Cannot find any service with service name 'mt5bsrv'.
+At line:1 char:65
++ ... utEncoding = New-Object Text.UTF8Encoding $false; Get-Service mt5bsrv
++                                                       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mt5bsrv:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommandnon-zero return code
+TP-GBC-01-LON | FAILED | rc=1 >>
+Get-Service : Cannot find any service with service name 'mt5bsrv'.
+At line:1 char:65
++ ... utEncoding = New-Object Text.UTF8Encoding $false; Get-Service mt5bsrv
++                                                       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mt5bsrv:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommandnon-zero return code
+TP-TSF-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-SCM-01-LON | FAILED | rc=1 >>
+Get-Service : Cannot find any service with service name 'mt5bsrv'.
+At line:1 char:65
++ ... utEncoding = New-Object Text.UTF8Encoding $false; Get-Service mt5bsrv
++                                                       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mt5bsrv:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommandnon-zero return code
+TP-JMF-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-PZM-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-AGR-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-AAFX-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-IFX-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-MLQ-01-LON | FAILED | rc=1 >>
+Get-Service : Cannot find any service with service name 'mt5bsrv'.
+At line:1 char:65
++ ... utEncoding = New-Object Text.UTF8Encoding $false; Get-Service mt5bsrv
++                                                       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mt5bsrv:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommandnon-zero return code
+TP-SGGT-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-BZX-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-VIPT-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-WBCR-01-LON | FAILED | rc=1 >>
+Get-Service : Cannot find any service with service name 'mt5bsrv'.
+At line:1 char:65
++ ... utEncoding = New-Object Text.UTF8Encoding $false; Get-Service mt5bsrv
++                                                       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mt5bsrv:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommandnon-zero return code
+TP-MNTX-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-GFX-02-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            T4B TradeProcessor SQL Export         
+
+
+
+TP-MXM-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-TFB-01-LON | FAILED | rc=1 >>
+Get-Service : Cannot find any service with service name 'mt5bsrv'.
+At line:1 char:65
++ ... utEncoding = New-Object Text.UTF8Encoding $false; Get-Service mt5bsrv
++                                                       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mt5bsrv:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommandnon-zero return code
+TP-AFX-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-TAC-01-LON | FAILED | rc=1 >>
+Get-Service : Cannot find any service with service name 'mt5bsrv'.
+At line:1 char:65
++ ... utEncoding = New-Object Text.UTF8Encoding $false; Get-Service mt5bsrv
++                                                       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mt5bsrv:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommandnon-zero return code
+TP-BEM-01-SG | FAILED | rc=1 >>
+Get-Service : Cannot find any service with service name 'mt5bsrv'.
+At line:1 char:65
++ ... utEncoding = New-Object Text.UTF8Encoding $false; Get-Service mt5bsrv
++                                                       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mt5bsrv:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommandnon-zero return code
+TP-SIN-01-SG | FAILED | rc=1 >>
+Get-Service : Cannot find any service with service name 'mt5bsrv'.
+At line:1 char:65
++ ... utEncoding = New-Object Text.UTF8Encoding $false; Get-Service mt5bsrv
++                                                       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mt5bsrv:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommandnon-zero return code
+TP-AFFX-01-LON | FAILED | rc=1 >>
+Get-Service : Cannot find any service with service name 'mt5bsrv'.
+At line:1 char:65
++ ... utEncoding = New-Object Text.UTF8Encoding $false; Get-Service mt5bsrv
++                                                       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mt5bsrv:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommandnon-zero return code
+TP-CI-01-LON | FAILED | rc=1 >>
+Get-Service : Cannot find any service with service name 'mt5bsrv'.
+At line:1 char:65
++ ... utEncoding = New-Object Text.UTF8Encoding $false; Get-Service mt5bsrv
++                                                       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mt5bsrv:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommandnon-zero return code
+TP-ELV-01-LON | FAILED | rc=1 >>
+Get-Service : Cannot find any service with service name 'mt5bsrv'.
+At line:1 char:65
++ ... utEncoding = New-Object Text.UTF8Encoding $false; Get-Service mt5bsrv
++                                                       ~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (mt5bsrv:String) [Get-Service], ServiceCommandException
+    + FullyQualifiedErrorId : NoServiceFoundForGivenName,Microsoft.PowerShell.Commands.GetServiceCommandnon-zero return code
+TP-SCZM-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-OXS-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-GCZ-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-EQFX-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
+TP-RZB-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  mt5bsrv            Backup Server                         
+
+
+
