@@ -1,0 +1,39 @@
+---
+- hosts: all
+  tasks:
+#==== Check User ====
+  - name: check user Tteam is available
+    win_user:
+      name: Tteam
+      state: query
+
+#==== Copy and Remove File ====
+  - name: Copy a single file keeping the filename
+    win_copy:
+      src: /home/alex/Ansible/test123
+      dest: C:\
+  
+  - name: Remove a file, if present
+    win_file:
+      path: C:\test123
+      state: absent
+
+#==== Get Hang Process ====
+  - name: Get Hang Process
+    win_shell: Get-Process | where-object {$_.Responding -eq $false}
+    register: result
+  - debug:
+      var: result.stdout_lines
+
+#==== Reboot PC ====
+  - name: Reboot the machine with all defaults
+    win_reboot:
+
+#==== Disable UAC ====
+  - win_shell: New-ItemProperty -Path HKLM:Software\Microsoft\Windows\CurrentVersion\policies\system -Name EnableLUA -PropertyType DWord -Value 0 -Force
+
+#====  ====
+
+#====  ====
+
+#====  ====
