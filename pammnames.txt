@@ -1,0 +1,165 @@
+PAMM-ALM-02-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  pamm_investors_... pamm_investors_sync                   
+Stopped  pamm_service       pamm_service                          
+Running  pamm_stat          pamm_stat                             
+
+
+
+PAMM-RF-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  pamm_service       pamm_service                          
+Running  pamm_stat          pamm_stat                             
+
+
+
+PAMM-LQD-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  t4b_pamm_invest... t4b_pamm_investors_sync               
+Running  t4b_pamm_service   t4b_pamm_service                      
+Running  t4b_pamm_stat      t4b_pamm_stat                         
+
+
+
+PAMM-ECM-03-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  pamm_investors_... pamm_investors_sync-live              
+Running  pamm_service-live  pamm_service-live                     
+Running  pamm_stat-live     pamm_stat-live                        
+
+
+
+PAMM-MEF-02-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  pamm_investors_... pamm_investors_sync_mt4               
+Running  pamm_service       pamm_service                          
+Running  pamm_stat          pamm_stat                             
+
+
+
+PAMM-LGC-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  pamm_its           pamm_its                              
+Running  pamm_mt5           pamm_mt5                              
+Running  pamm_service       pamm_service                          
+Running  pamm_stat          pamm_stat                             
+
+
+
+PAMM-JMF-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  pamm_investors_... pamm_investors_sync                   
+Running  pamm_mt5           pamm_mt5                              
+Running  pamm_service       pamm_service                          
+Running  pamm_stat          pamm_stat                             
+
+
+
+PAMM-MEX-01-HK | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  pamm_its           pamm_its                              
+Running  pamm_service       pamm_service                          
+Running  pamm_stat          pamm_stat                             
+
+
+
+PAMM-XTR-03-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  pamm_service       pamm_service                          
+Running  pamm_stat          pamm_stat                             
+
+
+
+PAMM-FXF-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  t4b.pamm_invest... t4b.pamm_investors_sync_live          
+Running  t4b.pamm_servic... t4b.pamm_service_live                 
+Running  t4b.pamm_stat_demo t4b.pamm_stat_live                    
+
+
+
+PAMM-TRR-01-SG | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  pamm_investors_... pamm_investors_sync                   
+Running  pamm_service       pamm_service                          
+Running  pamm_stat          pamm_stat                             
+
+
+
+PAMM-FFX-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  pamm_investors_... pamm_investors_sync                   
+Running  pamm_mt5           pamm_mt5                              
+Running  pamm_service       pamm_service                          
+Running  pamm_statistics    pamm_statistics                       
+
+
+
+PAMM-DRV-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Stopped  t4b.pamm.mt5.wo... t4b.pamm.mt5.worker.test              
+
+
+
+PAMM-GAN-01-LON | CHANGED | rc=0 >>
+
+PAMM-VIPT-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  t4b.pamm_mt5       t4b.pamm_mt5                          
+Running  t4b.pamm_service   t4b.pamm_service                      
+Running  t4b.pamm_stat      t4b.pamm_stat                         
+
+
+
+PAMM-GCZ-01-LON | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Stopped  t4b.pamm.invest... t4b.pamm.investors_sync               
+Running  t4b.pamm.mt5worker t4b.pamm.mt5worker                    
+Running  t4b.pamm.service   t4b.pamm.service                      
+Running  t4b.pamm.stat      t4b.pamm.stat                         
+
+
+
+PAMM-FWI-01-SG | CHANGED | rc=0 >>
+
+Status   Name               DisplayName                           
+------   ----               -----------                           
+Running  t4b.pamm.its.demo  t4b.pamm.its.demo                     
+Running  t4b.pamm.its.live  t4b.pamm.its.live                     
+Running  t4b.pamm.mt5.demo  t4b.pamm.mt5.demo                     
+Running  t4b.pamm.mt5.live  t4b.pamm.mt5.live                     
+Running  t4b.pamm.service   t4b.pamm.service                      
+Running  t4b.pamm.stat      t4b.pamm.stat                         
+
+
+
