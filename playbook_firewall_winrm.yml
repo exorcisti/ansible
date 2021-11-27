@@ -1,8 +1,7 @@
 ---
 - hosts: all
-
   tasks:
-
+  
   - name: Firewall rule winrm TCP port 5985 /1
     win_firewall_rule:
       name: Windows Remote Management (HTTP-In)-1
@@ -23,7 +22,7 @@
       direction: in
       protocol: tcp
       profiles: public
-      remoteip: 176.32.188.2
+      remoteip: 109.71.180.178
       state: present
       enabled: yes
 
@@ -39,6 +38,17 @@
       state: present
       enabled: yes      
 
+  - name: Firewall rule winrm TCP port 5985 /4
+    win_firewall_rule:
+      name: Windows Remote Management (HTTP-In)-4
+      localport: 5985
+      action: allow
+      direction: in
+      protocol: tcp
+      profiles: public
+      remoteip: 81.17.60.94
+      state: present
+      enabled: yes 
 
   - name: Firewall rule winrm TCP port 5985
     win_firewall_rule:
