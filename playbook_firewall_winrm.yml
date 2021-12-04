@@ -9,7 +9,7 @@
       action: allow
       direction: in
       protocol: tcp
-      profiles: public
+      profiles: domain,private,public
       remoteip: 46.229.208.26
       state: present
       enabled: yes
@@ -21,7 +21,7 @@
       action: allow
       direction: in
       protocol: tcp
-      profiles: public
+      profiles: domain,private,public
       remoteip: 109.71.180.178
       state: present
       enabled: yes
@@ -33,7 +33,7 @@
       action: allow
       direction: in
       protocol: tcp
-      profiles: public
+      profiles: domain,private,public
       remoteip: 5.79.86.92
       state: present
       enabled: yes      
@@ -45,7 +45,7 @@
       action: allow
       direction: in
       protocol: tcp
-      profiles: public
+      profiles: domain,private,public
       remoteip: 81.17.60.94
       state: present
       enabled: yes 
@@ -57,7 +57,7 @@
       action: allow
       direction: in
       protocol: tcp
-      profiles: public
+      profiles: domain,private,public
       remoteip: any
       state: absent
       enabled: yes
@@ -81,7 +81,7 @@
       action: allow
       direction: in
       protocol: tcp
-      profiles: public
+      profiles: domain,private,public
       remoteip: 81.17.60.94
       state: present
       enabled: yes
@@ -93,7 +93,7 @@
       action: allow
       direction: in
       protocol: udp
-      profiles: public
+      profiles: domain,private,public
       remoteip: 81.17.60.94
       state: present
       enabled: yes  
