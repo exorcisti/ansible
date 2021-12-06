@@ -59,8 +59,8 @@
       protocol: tcp
       profiles: public
       remoteip: any
-      state: absent
-      enabled: yes
+      state: present
+      enabled: no
 
   - name: Firewall rule winrm TCP port 5985
     win_firewall_rule:
