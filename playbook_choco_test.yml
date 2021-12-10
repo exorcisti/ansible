@@ -1,9 +1,0 @@
----
-- hosts: all
-
-  tasks:
-
-  - name: Install choco
-    win_chocolatey:
-      name: chocolatey
-      state: latest

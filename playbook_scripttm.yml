@@ -25,5 +25,5 @@
 
   - win_shell: New-ItemProperty -Path HKLM:Software\Microsoft\Windows\CurrentVersion\policies\system -Name EnableLUA -PropertyType DWord -Value 0 -Force
 
-  - name: Reboot the machine
-    win_reboot:
+#  - name: Reboot the machine
+#    win_reboot:
