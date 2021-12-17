@@ -1,0 +1,8 @@
+- hosts: all
+
+  tasks:
+
+  - name: Install zabbix-agent useing choco
+    win_chocolatey:
+      name: zabbix-agent
+      state: absent
