@@ -1,3 +1,19 @@
 ---
-- hosts: all
+- hosts: win
   tasks:
+#==== Check User ====
+  - name: check user Tteam is available
+    win_user:
+      name: Tteam
+      state: query
+
+#==== Copy and Remove File ====
+  - name: Copy a single file keeping the filename
+    win_copy:
+      src: /home/alex/Ansible/test123
+      dest: C:\
+  
+  - name: Remove a file, if present
+    win_file:
+      path: C:\test123
+      state: absent
