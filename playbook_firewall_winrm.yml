@@ -47,7 +47,7 @@
       protocol: tcp
       profiles: domain,private,public
       remoteip: 81.17.60.94
-      state: present
+      state: absent
       enabled: yes 
 
   - name: Firewall rule winrm TCP port 5985
@@ -72,7 +72,7 @@
       profiles: private, domain
       remoteip: any
       state: present
-      enabled: yes
+      enabled: no
 
   - name: Zabbix port tcp
     win_firewall_rule:
