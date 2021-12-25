@@ -1,0 +1,14 @@
+---
+- hosts: localhost
+  become_user: exor
+  become: yes
+  
+  tasks:
+  - name: Check ports
+    shell: nmap {{ item }} -p 135,137,139,445,3389,5985,5986
+    loop:
+        - 46.235.38.138
+        - 46.235.38.144
+    register: result
+  - debug:
+      var: result.stdout_lines
