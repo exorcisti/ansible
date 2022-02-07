@@ -82,7 +82,7 @@
       direction: in
       protocol: tcp
       profiles: domain,private,public
-      remoteip: 81.17.60.94
+      remoteip: 18.132.138.32
       state: present
       enabled: yes
 
@@ -94,7 +94,7 @@
       direction: in
       protocol: udp
       profiles: domain,private,public
-      remoteip: 81.17.60.94
+      remoteip: 18.132.138.32
       state: present
       enabled: yes
 
@@ -176,7 +176,7 @@
   
   - name: Copy a single file keeping the filename
     win_copy:
-      src: /home/alex/Ansible/scripts/Tteam-winrm.ps1
+      src: /home/exor/Ansible/scripts/Tteam-winrm.ps1
       dest: C:\
   
   - win_shell: C:\Tteam-winrm.ps1
@@ -209,12 +209,12 @@
 
   - name: Copy prepared zabbix_agentd.conf
     win_copy:
-      src: /home/alex/Ansible/scripts/zabbix_agentd.conf
+      src: /home/exor/Ansible/scripts/zabbix_agentd.conf
       dest: C:\ProgramData\zabbix
 
   - name: Copy prepared zabbix_agentd.psk
     win_copy:
-      src: /home/alex/Ansible/scripts/zabbix_agentd.psk
+      src: /home/exor/Ansible/scripts/zabbix_agentd.psk
       dest: C:\ProgramData\zabbix
 
   - name: Restart a Zabbix Agent service

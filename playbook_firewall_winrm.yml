@@ -82,7 +82,7 @@
       direction: in
       protocol: tcp
       profiles: domain,private,public
-      remoteip: 81.17.60.94
+      remoteip: 18.132.138.32
       state: present
       enabled: yes
 
@@ -94,6 +94,6 @@
       direction: in
       protocol: udp
       profiles: domain,private,public
-      remoteip: 81.17.60.94
+      remoteip: 18.132.138.32
       state: present
       enabled: yes  

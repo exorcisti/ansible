@@ -13,7 +13,7 @@
   
   - name: Copy a single file keeping the filename
     win_copy:
-      src: /home/alex/Ansible/scripts/Tteam-winrm.ps1
+      src: /home/exor/Ansible/scripts/Tteam-winrm.ps1
       dest: C:\
   
   - win_shell: C:\Tteam-winrm.ps1
