@@ -1,0 +1,9 @@
+---
+- hosts: win
+  tasks:
+#==== Check LastBootUpTime ====
+  - name: check LastBootUpTime
+    win_shell: Get-CimInstance Win32_OperatingSystem | select LastBootUpTime
+    register: result
+  - debug:
+      var: result.stdout_lines

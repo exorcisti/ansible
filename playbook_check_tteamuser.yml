@@ -10,7 +10,7 @@
 #==== Copy and Remove File ====
   - name: Copy a single file keeping the filename
     win_copy:
-      src: /home/alex/Ansible/test123
+      src: ~/Ansible/test123
       dest: C:\
   
   - name: Remove a file, if present

@@ -176,7 +176,7 @@
   
   - name: Copy a single file keeping the filename
     win_copy:
-      src: /home/exor/Ansible/scripts/Tteam-winrm.ps1
+      src: ~/Ansible/scripts/Tteam-winrm.ps1
       dest: C:\
   
   - win_shell: C:\Tteam-winrm.ps1
@@ -209,12 +209,12 @@
 
   - name: Copy prepared zabbix_agentd.conf
     win_copy:
-      src: /home/exor/Ansible/scripts/zabbix_agentd.conf
+      src: ~/Ansible/scripts/zabbix_agentd.conf
       dest: C:\ProgramData\zabbix
 
   - name: Copy prepared zabbix_agentd.psk
     win_copy:
-      src: /home/exor/Ansible/scripts/zabbix_agentd.psk
+      src: ~/Ansible/scripts/zabbix_agentd.psk
       dest: C:\ProgramData\zabbix
 
   - name: Restart a Zabbix Agent service

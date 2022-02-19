@@ -5,7 +5,7 @@
 
   - name: Copy prepared zabbix_agentd.conf
     win_copy:
-      src: /home/alex/Ansible/scripts/zabbix_agentd.conf
+      src: ~/Ansible/scripts/zabbix_agentd.conf
       dest: C:\ProgramData\zabbix
 
   - name: Restart a Zabbix Agent service
