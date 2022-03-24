@@ -34,7 +34,7 @@
       direction: in
       protocol: tcp
       profiles: domain,private,public
-      remoteip: 5.79.86.92
+      remoteip: 34.202.190.113
       state: present
       enabled: yes      
 
@@ -46,8 +46,8 @@
       direction: in
       protocol: tcp
       profiles: domain,private,public
-      remoteip: 81.17.60.94
-      state: absent
+      remoteip: 81.17.60.23
+      state: present
       enabled: yes 
 
   - name: Firewall rule winrm TCP port 5985

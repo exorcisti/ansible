@@ -112,6 +112,17 @@
       state: present
       enabled: yes
 
+  - name: Remote Desktop - User Mode (TCP-In) /7
+    win_firewall_rule:
+      name: Remote Desktop - User Mode (TCP-In)-7
+      localport: "{{ port }}"
+      action: allow
+      direction: in
+      protocol: tcp
+      remoteip: 34.202.190.113
+      state: present
+      enabled: yes
+
   - name: Remote Desktop - User Mode (TCP-In)
     win_firewall_rule:
       name: Remote Desktop - User Mode (TCP-In)

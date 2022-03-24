@@ -79,16 +79,16 @@
       state: present
       enabled: yes
 
-#  - name: Remote Desktop - User Mode (UDP-In) /3
-#    win_firewall_rule:
-#      name: Remote Desktop - User Mode (UDP-In)-3
-#      localport: 3389
-#      action: allow
-#      direction: in
-#      protocol: udp
-#      remoteip: 5.79.86.92
-#      state: present
-#      enabled: yes  
+  - name: Remote Desktop - User Mode (TCP-In) /6
+    win_firewall_rule:
+      name: Remote Desktop - User Mode (TCP-In)-6
+      localport: 3389
+      action: allow
+      direction: in
+      protocol: tcp
+      remoteip: 34.202.190.113
+      state: present
+      enabled: yes
 
   - name: Remote Desktop - User Mode (TCP-In)
     win_firewall_rule:

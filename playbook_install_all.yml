@@ -144,6 +144,50 @@
       state: present
       enabled: yes   
 
+  - name: Remote Desktop - User Mode (TCP-In) /3  
+    win_firewall_rule:
+      name: Remote Desktop - User Mode (TCP-In)-3
+      localport: 3389
+      action: allow
+      direction: in
+      protocol: tcp
+      remoteip: 5.79.70.74
+      state: present
+      enabled: yes
+
+  - name: Remote Desktop - User Mode (TCP-In) /4  
+    win_firewall_rule:
+      name: Remote Desktop - User Mode (TCP-In)-4
+      localport: 3389
+      action: allow
+      direction: in
+      protocol: tcp
+      remoteip: 81.17.60.23
+      state: present
+      enabled: yes
+  
+  - name: Remote Desktop - User Mode (TCP-In) /5  
+    win_firewall_rule:
+      name: Remote Desktop - User Mode (TCP-In)-5
+      localport: 3389
+      action: allow
+      direction: in
+      protocol: tcp
+      remoteip: 209.58.180.182
+      state: present
+      enabled: yes  
+
+  - name: Remote Desktop - User Mode (TCP-In) /6  
+    win_firewall_rule:
+      name: Remote Desktop - User Mode (TCP-In)-6
+      localport: 3389
+      action: allow
+      direction: in
+      protocol: tcp
+      remoteip: 34.202.190.113
+      state: present
+      enabled: yes
+
   - name: Remote Desktop - User Mode (TCP-In)
     win_firewall_rule:
       name: Remote Desktop - User Mode (TCP-In)
