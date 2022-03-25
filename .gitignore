@@ -1,6 +1,0 @@
-hosts*
-group_vars
-scripts
-*.txt
-*.cfg
-.gitignore
