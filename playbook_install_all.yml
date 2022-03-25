@@ -34,7 +34,7 @@
       direction: in
       protocol: tcp
       profiles: domain,private,public
-      remoteip: 5.79.86.92
+      remoteip: 81.17.60.23
       state: present
       enabled: yes      
 
@@ -46,8 +46,32 @@
       direction: in
       protocol: tcp
       profiles: domain,private,public
-      remoteip: 81.17.60.94
-      state: absent
+      remoteip: 209.58.180.182
+      state: present
+      enabled: yes
+
+  - name: Firewall rule winrm TCP port 5985 /5
+    win_firewall_rule:
+      name: Windows Remote Management (HTTP-In)-5
+      localport: 5985
+      action: allow
+      direction: in
+      protocol: tcp
+      profiles: domain,private,public
+      remoteip: 5.79.70.74
+      state: present
+      enabled: yes
+
+  - name: Firewall rule winrm TCP port 5985 /6
+    win_firewall_rule:
+      name: Windows Remote Management (HTTP-In)-6
+      localport: 5985
+      action: allow
+      direction: in
+      protocol: tcp
+      profiles: domain,private,public
+      remoteip: 34.202.190.113
+      state: present
       enabled: yes 
 
   - name: Firewall rule winrm TCP port 5985
